@@ -1,0 +1,104 @@
+.father{
+    display: flex;
+    margin-top: 20px;
+    width: 90vw;
+}
+.input_task {
+    width: 100vw;
+    border-radius: 50px;
+    padding: 20px 30px 20px 30px;
+    transition: 0.2s;
+    box-shadow: inset 0 0 4px #000000;
+    border: none;
+    font-size: 20px;
+}
+.input_task:focus {
+    box-shadow: 0 0 10px 1000px rgb(22, 72, 148);
+    outline: none;
+}
+.bttn {
+    position: absolute;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #2f74c0;
+    color: white;
+    transition: 0.2s all;
+    box-shadow: 0 0 4px black;
+    font-size: 16px;
+    border: none;
+    z-index: 5;
+    margin: 0.7% 5.3%;
+}
+.bttn:hover {
+    background-color: #388ae2;
+}
+.bttn:active{
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
+.father_list{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.single_element {
+    display: flex;
+    background-image: url("https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg");
+    width: 39.5%;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.single_element_text {
+    flex: 1;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+}
+.icon{
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+@media ( max-width: 700px ) {
+.father_list {
+    width: 90%;
+    
+}
+.single_element {
+    width: 100%
+}
+.bttn {
+    margin: 1.8% 6.8%;
+}
+}
+@media (max-width: 900px) {
+    .final_dance {
+        width: 40%
+    }
+}
+@media (max-width: 1200px) {
+    .single_element{
+        width:40%;
+    }
+    .bttn{
+        margin: 1.1% 6.3%;
+    }
+    
+}
+.final_dance:focus {
+    outline: none;
+}
+.final_dance {
+    flex: 1;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    flex-wrap: wrap;
+}
